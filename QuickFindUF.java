@@ -19,13 +19,13 @@ public class QuickFindUF {
 
     public void union(int p, int q){
 
-        /*
+
         int pId = id[p];
         int qId = id[q];
-*/
+
         for(int i = 0; i<id.length; i++){
-            if(id[i]==id[p]){
-                id[i] = id[q];
+            if(id[i]==pId){
+                id[i] = qId;
             }
         }
     }
