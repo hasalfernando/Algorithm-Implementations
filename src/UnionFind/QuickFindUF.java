@@ -29,4 +29,10 @@ public class QuickFindUF {
             }
         }
     }
+
+    public static void main(String[] args) {
+        QuickFindUF qf = new QuickFindUF(6);
+        qf.union(2,3);
+        System.out.println("2 and 3 connected is "+qf.connected(2,3));
+    }
 }
